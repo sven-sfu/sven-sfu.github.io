@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
@@ -150,6 +149,40 @@ function App() {
             </div>
           </div>
         </section>
+
+         {/* Work Experience Section */}
+        <section id="work" className="py-20 px-4 bg-white" style={{ maxWidth: "900px", margin: "auto" }}>
+          <h2 className="text-3xl font-bold mb-6 text-[#4a4e54ff]">Work Experience</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold">GIS Software Developer Intern – XYZ Corp</h3>
+              <p className="text-gray-700">May 2024 – August 2024</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Developed custom ArcGIS widgets for internal mapping applications.</li>
+                <li>Improved geospatial query performance by 30% using spatial indexing.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Junior Web Developer – Freelance</h3>
+              <p className="text-gray-700">2023 – Present</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Built responsive websites using React and Tailwind CSS.</li>
+                <li>Worked with clients to deliver custom features on short timelines.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Founder – JensenGIS</h3>
+              <p className="text-gray-700">2023 – Present</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Founded a GIS consulting company offering customized geospatial software solutions.</li>
+                <li>Developing GIS SaaS products for organizations and municipalities.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        
 
        
       </main>
