@@ -22,10 +22,8 @@ function App() {
         />
         <h1 className="text-2xl font-bold mb-1 text-center">Sven Jensen</h1>
         <p className="text-sm text-[#d9ffe9ff] text-center mb-4 max-w-md">
-          I'm a Computer Science student at SFU with a Minor in Geographical
-          Information Science. I also run a GIS software company called{" "}
-          <strong>JensenGIS</strong>, where we offer consulting services and
-          deliver cloud-based GIS SaaS solutions.
+          I'm a Computer Science and Geography student at SFU. I also run a GIS software company called{" "}
+          <strong>JensenGIS</strong>, where I build cool projects for clients and cloud based GIS tools for the Esri ArcGIS platform.
         </p>
         <div className="flex gap-3 mb-4">
           <a
@@ -150,7 +148,7 @@ function App() {
           <h2 className="text-3xl font-bold mb-6 text-[#4a4e54ff]">Work Experience</h2>
           <div className="space-y-6 ml-10">
                         <div>
-              <h3 className="text-xl font-semibold">Founder – JensenGIS</h3>
+              <h3 className="text-xl font-semibold">Founder @ <a href="https://jensengis.com" target='_blank' className="text-blue-600 underline">JensenGIS</a></h3>
               <p className="text-gray-700">July 2025 – Present</p>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 <li>Founded a GIS consulting company offering customized geospatial software solutions.</li>
@@ -166,7 +164,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Web Developer, Mechanic, Ski Technician, On Top Bike Shop – North Vancouver</h3>
+              <h3 className="text-xl font-semibold">Web Developer, Mechanic, Ski Technician @ On Top Bike Shop – North Vancouver</h3>
               <p className="text-gray-700">July 2020 – February 2024</p>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 <li>Designed and developed the bike shop's website using HTML, CSS and Javascript with Zoho CRM integration on a Netlify-hosted site.</li>
