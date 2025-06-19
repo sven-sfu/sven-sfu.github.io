@@ -55,6 +55,41 @@ function App() {
           </a>
         </Button>
       </aside>
+
+       {/* Main Content */}
+      <main
+        className="
+          md:ml-72
+          
+          "
+      >
+        {/* Header Navigation */}
+        <header
+          className="
+            bg-[#d9ffe9ff]
+            shadow
+            p-4
+            flex
+            justify-center
+            gap-8
+            sticky
+            top-0
+            z-30
+          "
+        >
+          <a href="#projects" className="text-[#4a4e54ff] hover:underline">
+            Projects
+          </a>
+          <a href="#work" className="text-[#4a4e54ff] hover:underline">
+            Work Experience
+          </a>
+          <a href="#education" className="text-[#4a4e54ff] hover:underline">
+            Education
+          </a>
+        </header>
+
+       
+      </main>
     </div>
   );
 }
