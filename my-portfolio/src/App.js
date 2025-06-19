@@ -181,7 +181,18 @@ function App() {
           </div>
         </section>
 
-
+       {/* Education Section */}
+        <section id="education" className="py-20 px-4 bg-[#d9ffe9ff]" style={{ margin: "auto" }}>
+          <h2 className="text-3xl font-bold mb-6 text-[#4a4e54ff]">Education</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-semibold">Simon Fraser University</h3>
+              <p className="text-gray-700">Bachelor of Science in Computer Science</p>
+              <p className="text-gray-700">Minor in Geographical Information Science</p>
+              <p className="text-gray-600">Expected Graduation: 2026</p>
+            </div>
+          </div>
+        </section>
         
 
        
