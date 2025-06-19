@@ -191,14 +191,14 @@ function App() {
        {/* Education Section */}
         <section id="education" className="py-20 px-4 bg-[#d9ffe9ff]" style={{ margin: "auto", display: "flex", justifyContent: "space-between" }}>
           <div className="space-y-4 ml-10">
-            <h3 className="text-xl font-semibold">Simon Fraser University</h3>
+            <h3 className="text-xl font-semibold"> <a href="https://sfu.ca" target='_blank' className="text-blue-600 underline">Simon Fraser University</a></h3>
             <ul className="list-disc list-inside text-gray-700">
               <li>Bachelor of Science in Computer Science</li>
               <li>Minor in Geographical Information Science</li>
             </ul>
             <p className="text-gray-600">Expected Graduation: 2027</p>
           </div>
-          <img src="/sfuLogo.png" style={{ width: "15%", height: "30%", marginRight: "10%"}} />
+          <img src="/sfuLogo.png" alt="SFU Logo" style={{ width: "15%", height: "30%", marginRight: "10%"}} />
         </section>
         
 
