@@ -125,19 +125,34 @@ function App() {
             <h4 className="text-xl font-semibold mb-2 text-[#4a4e54ff]">Skills</h4>
             <div className="flex flex-wrap gap-2">
               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
-                React
+                TypeScript
               </span>
               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
-                ArcGIS JS API
+                ArcGIS Maps SDK for Javascript
               </span>
               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
-                Tailwind CSS
+                NextJS & ReactJS
               </span>
               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
                 Python
               </span>
               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
                 FastAPI
+              </span>
+              <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
+                Docker
+              </span>
+              <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
+                C++
+              </span>
+              <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
+                NGINX
+              </span>
+               <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
+                ArcGIS
+              </span>
+              <span className="bg-[#d9ffe9ff] text-[#4a4e54ff] px-3 py-1 rounded-full">
+                QGIS
               </span>
             </div>
           </div>
