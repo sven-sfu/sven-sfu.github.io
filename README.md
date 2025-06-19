@@ -1,3 +1,5 @@
-Welcome to Sven's Portfolio
+# Portfolio Static Site
 
-I am a GIS Software Developer and a SFU Computer Science Student
+This codebase contains the source for my personal portfolio website, built using [React](https://react.dev/). The site showcases my projects, professional experience, education, and more. It serves as a central place to learn about my background and the work I have done.
+
+Feel free to explore the code and reach out if you have any questions or feedback!
