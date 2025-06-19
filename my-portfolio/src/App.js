@@ -18,6 +18,7 @@ function App() {
           src="/svenInBrasil.webp"
           alt="Photo of Sven Jensen, GIS Software Developer"
           className="rounded-full w-28 h-28 object-cover mb-4 shadow-lg"
+          style={{width: "164px", height: "164px"}}
         />
         <h1 className="text-2xl font-bold mb-1 text-center">Sven Jensen</h1>
         <p className="text-sm text-[#d9ffe9ff] text-center mb-4 max-w-md">
@@ -177,12 +178,12 @@ function App() {
        {/* Education Section */}
         <section id="education" className="py-20 px-4 bg-[#d9ffe9ff]" style={{ margin: "auto", display: "flex", justifyContent: "space-between" }}>
           <div className="space-y-4 ml-10">
-            <div>
-              <h3 className="text-xl font-semibold">Simon Fraser University</h3>
-              <p className="text-gray-700">Bachelor of Science in Computer Science</p>
-              <p className="text-gray-700">Minor in Geographical Information Science</p>
-              <p className="text-gray-600">Expected Graduation: 2027</p>
-            </div>
+            <h3 className="text-xl font-semibold">Simon Fraser University</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Bachelor of Science in Computer Science</li>
+              <li>Minor in Geographical Information Science</li>
+            </ul>
+            <p className="text-gray-600">Expected Graduation: 2027</p>
           </div>
           <img src="/sfuLogo.png" style={{ width: "15%", height: "30%", marginRight: "10%"}} />
         </section>
