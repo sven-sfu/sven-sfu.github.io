@@ -181,7 +181,7 @@ function App() {
               <h3 className="text-xl font-semibold">Simon Fraser University</h3>
               <p className="text-gray-700">Bachelor of Science in Computer Science</p>
               <p className="text-gray-700">Minor in Geographical Information Science</p>
-              <p className="text-gray-600">Expected Graduation: 2026</p>
+              <p className="text-gray-600">Expected Graduation: 2027</p>
             </div>
           </div>
           <img src="/sfuLogo.png" style={{ width: "15%", height: "30%", marginRight: "10%"}} />
