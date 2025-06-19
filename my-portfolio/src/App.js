@@ -9,20 +9,17 @@ function App() {
             {/* Sidebar for desktop, top section for mobile */}
       <aside
         className="
-          bg-[#4a4e54ff] text-[#4bb375ff] shadow-lg p-6 flex flex-col items-center
-          md:fixed md:top-0 md:left-0 md:h-full md:w-72
-          w-full
+          bg-[#4a4e54ff] text-[#4bb375ff] shadow-lg p-6 flex flex-col items-center justify-center
+          md:fixed md:top-0 md:left-0 md:h-full md:w-80
+          w-full top-0 position-fixed pt-20
           "
       >
         <img
-          src="/headshot.jpg"
+          src="/svenInBrasil.webp"
           alt="Photo of Sven Jensen, GIS Software Developer"
           className="rounded-full w-28 h-28 object-cover mb-4 shadow-lg"
         />
         <h1 className="text-2xl font-bold mb-1 text-center">Sven Jensen</h1>
-        <p className="text-sm text-[#d9ffe9ff] text-center mb-4">
-          GIS Software Developer & CS Student
-        </p>
         <p className="text-sm text-[#d9ffe9ff] text-center mb-4 max-w-md">
           I'm a Computer Science student at SFU with a Minor in Geographical
           Information Science. I also run a GIS software company called{" "}
@@ -31,50 +28,45 @@ function App() {
         </p>
         <div className="flex gap-3 mb-4">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/sven--jensen"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Linkedin className="w-5 h-5 text-[#4bb375ff]" />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/svenweb"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Github className="w-5 h-5 text-[#4bb375ff]" />
           </a>
-          <a href="mailto:your@email.com">
+          <a href="mailto:sven@analysis.net">
             <Mail className="w-5 h-5 text-[#4bb375ff]" />
           </a>
         </div>
-        <Button className="mt-6 bg-[#4bb375ff] text-black hover:bg-[#d9ffe9ff]" asChild>
+      {/* Resume Download Button
+        <Button style={{backgroundColor: "#d9ffe9ff", color: "#4a4e54ff", marginTop: "15px"}}className="mt-10 bg-[#d9ffe9ff] text-black hover:bg-[#d9ffe9ff]" asChild>
           <a href="/resume.pdf" download>
             Download Resume
           </a>
         </Button>
+         */}
       </aside>
 
        {/* Main Content */}
       <main
         className="
-          md:ml-72
-          
+          md:ml-80
+          pt-16
           "
       >
         {/* Header Navigation */}
         <header
-          className="
-            bg-[#4a4e54ff]
-            shadow
-            p-4
-            flex
-            justify-center
-            gap-8
-            sticky
-            top-0
-            z-30
-          "
+        className="
+          bg-[#4a4e54ff] shadow p-4 flex items-center justify-center gap-8
+          fixed top-0 md:left-80 left-0 right-0 z-30 h-16
+        "
         >
           <a href="#projects" className="text-[#d9ffe9ff] hover:underline">
             Projects
@@ -98,31 +90,33 @@ function App() {
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="text-xl font-semibold">Saved Instance Widget</h3>
               <p className="text-gray-600 mt-2">
-                An ArcGIS Experience Builder widget that saves and retrieves layer
-                states for different user sessions. Built with React, ArcGIS JS API,
-                and AppWrite.
+                The Save Instance Widget lets you save and share the current state of your web map in Experience Builder — including extent, visible layers, basemap, graphics, and more. It's inspired by the classic Save Session Widget from Web AppBuilder, but built specifically for ArcGIS Experience Builder.
               </p>
               <img
-                src="/saved-instance-screenshot.png"
+                src="/widgetDevImg-2.jpeg"
                 alt="Screenshot of Saved Instance Widget interface"
-                className="mt-4 rounded-lg shadow"
+                className="mt-4 rounded-sm shadow"
+                style={{ width: "60%" }}
               />
               <div className="mt-4 flex gap-4">
                 <a
-                  href="https://github.com/yourusername/saved-instance-widget"
+                  href="https://jensengis.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  View on GitHub
+                  Learn more
                 </a>
+              </div>
+
+              <div className="mt-4 flex gap-4">
                 <a
-                  href="https://demo.example.com"
+                  href="https://community.esri.com/t5/arcgis-experience-builder-ideas/save-instance-widget/idi-p/1610260"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  Live Demo
+                  Esri Community Forum
                 </a>
               </div>
             </div>
@@ -151,40 +145,38 @@ function App() {
         </section>
 
          {/* Work Experience Section */}
-        <section id="work" className="py-20 px-4 bg-white" style={{ maxWidth: "900px", margin: "auto" }}>
+        <section id="work" className="py-20 px-4 bg-white" style={{ margin: "auto" }}>
           <h2 className="text-3xl font-bold mb-6 text-[#4a4e54ff]">Work Experience</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold">GIS Software Developer Intern – XYZ Corp</h3>
-              <p className="text-gray-700">May 2024 – August 2024</p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
-                <li>Developed custom ArcGIS widgets for internal mapping applications.</li>
-                <li>Improved geospatial query performance by 30% using spatial indexing.</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Junior Web Developer – Freelance</h3>
-              <p className="text-gray-700">2023 – Present</p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
-                <li>Built responsive websites using React and Tailwind CSS.</li>
-                <li>Worked with clients to deliver custom features on short timelines.</li>
-              </ul>
-            </div>
-            <div>
+          <div className="space-y-6 ml-10">
+                        <div>
               <h3 className="text-xl font-semibold">Founder – JensenGIS</h3>
-              <p className="text-gray-700">2023 – Present</p>
+              <p className="text-gray-700">July 2025 – Present</p>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 <li>Founded a GIS consulting company offering customized geospatial software solutions.</li>
                 <li>Developing GIS SaaS products for organizations and municipalities.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">GIS Software Developer @ Mcelhanney</h3>
+              <p className="text-gray-700">Feb 2024 – July 2025</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Developed custom ArcGIS widgets for internal mapping applications.</li>
+                <li>Performed geoprocessing and ArcGIS Pro automation using Python scripts. Collected and quality-checked asset data in the field, followed by digitization and validation in ArcGIS Pro. Conducted spatial analysis and feature digitization using client-provided DEMs to prepare detailed field maps.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Web Developer, Mechanic, Ski Technician, On Top Bike Shop – North Vancouver</h3>
+              <p className="text-gray-700">July 2020 – February 2024</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Designed and developed the bike shop's website using HTML, CSS and Javascript with Zoho CRM integration on a Netlify-hosted site.</li>
               </ul>
             </div>
           </div>
         </section>
 
        {/* Education Section */}
-        <section id="education" className="py-20 px-4 bg-[#d9ffe9ff]" style={{ margin: "auto" }}>
-          <h2 className="text-3xl font-bold mb-6 text-[#4a4e54ff]">Education</h2>
-          <div className="space-y-4">
+        <section id="education" className="py-20 px-4 bg-[#d9ffe9ff]" style={{ margin: "auto", display: "flex", justifyContent: "space-between" }}>
+          <div className="space-y-4 ml-10">
             <div>
               <h3 className="text-xl font-semibold">Simon Fraser University</h3>
               <p className="text-gray-700">Bachelor of Science in Computer Science</p>
@@ -192,6 +184,7 @@ function App() {
               <p className="text-gray-600">Expected Graduation: 2026</p>
             </div>
           </div>
+          <img src="/sfuLogo.png" style={{ width: "15%", height: "30%", marginRight: "10%"}} />
         </section>
         
 
